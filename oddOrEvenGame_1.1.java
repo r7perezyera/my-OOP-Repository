@@ -4,20 +4,22 @@ import java.util.Scanner;
 public class OddsAndEvens {
     public static void main(String[] args){
         // get user ready to play
+        Scanner entrada = new Scanner(System.in);
+        String userChoice;
+        String userName;
+
         System.out.println("Hi there! Let's play a game called \"Odds and Evens\"");
         System.out.print("What is your name? ");
-        Scanner entrada = new Scanner(System.in);
-        String userName = entrada.nextLine();
-        System.out.print("Hi " + userName + "! Which do you chose? (O)dds or (E)vens? ");
-        String userChoice;
-        userChoice = entrada.next();
-        if(userChoice.equalsIgnoreCase("e")){
-            System.out.println(userName + " has picked evens! The computer will be odds.");
-        }else if(userChoice.equalsIgnoreCase("o")){
-            System.out.println(userName + " has picked odds! The computer will be evens.");
-        }else{
-            System.out.println("You should have typed \"E\" or \"O\" >:(.");
-        }
+        userName = entrada.nextLine();
+        do{
+            System.out.print("Hi " + userName + "! Which do you chose? (O)dds or (E)vens? ");
+            userChoice = entrada.next();
+            if("e".equalsIgnoreCase(userChoice)){
+                System.out.println(userName + " has picked evens! The computer will be odds.");
+            }else if("o".equalsIgnoreCase(userChoice)){
+                System.out.println(userName + " has picked odds! The computer will be evens.");
+            }
+        }while( !"e".equalsIgnoreCase(userChoice) && !"o".equalsIgnoreCase(userChoice) );
         System.out.println("------------------------------");
 
         // play the game
