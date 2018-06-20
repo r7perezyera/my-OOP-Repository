@@ -1,3 +1,9 @@
+/*
+Author: Roberto Téllez Perezyera
+This program lets the user play a single game of Odd or Even (per execution) against the computer.
+Control Structures Module Project
+ */
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -50,7 +56,6 @@ public class OddsAndEvens {
             }
         }
         System.out.println("------------------------------");
-
-
+        
     }
 }
