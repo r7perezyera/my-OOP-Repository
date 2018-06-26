@@ -1,2 +1,2 @@
-# my-OOP-Repository
-Just wanted to backup my classwork/homework from OOP class
+# My Java repository
+Just wanted to backup/keep some of the classwork / prob solving work I do on Java
