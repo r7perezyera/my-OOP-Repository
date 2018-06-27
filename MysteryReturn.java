@@ -1,3 +1,7 @@
+/*
+https://practiceit.cs.washington.edu/problem/view/bjp4/chapter3/s14-parameterMysteryReturn
+*/
+
 public class MysteryReturn {
     
     public static void main(String[] args) {
